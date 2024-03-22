@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro formulário</title>
+</head>
+<body>
+    
+    <header>
+        <h1>CADASTRO</h1>
+    </header>
+    <hr>
+    <main>
+        <form action="açao.html" method="post" enctype="multipart/form-data">
+            <label>NOME:</label>
+            <input type="text" name= "name" id="name" required>
+            <br>
+            <label> SENHA:</label>
+            <br>
+            <input type="password" name="password" id="password" required>
+            
+            <br>
+            <br>
+            <label> Insira seu arquivo:</label>
+            <input type="file" name="file" id="file" accept=" .png, .jpn, .jpeg" multiple>
+
+            <br>
+            <br>
+            <label> Selecione sua opção: </label>
+            <input type="radio" name="option1" id="option1" value="option1" value="1" checked required> Feminino
+            <input type="radio" name="option1" id="option1" value="option1" value="1" required> Masculino
+
+  <br>
+            <br>
+            <label> Selecione suas disciplinas:</label>
+            
+            <input type="checkbox" name="Fis" id="Fis" checked> Física
+            <input type="checkbox" name="Geo" id="Geo" checked> Geografia
+            <input type="checkbox" name="Mat" id="Mat" checked> Matemática
+            <input type="checkbox" name="Ing" id="Ing" checked> Inglês
+            <br>
+            
+            <input type="submit" value="enviar">
+        </form>
+
+    </main>
+</body>
+</html>
